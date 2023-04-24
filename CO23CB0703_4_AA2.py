@@ -1,12 +1,10 @@
-def fibonacci_recursive(n):
-    """This function generates the Fibonacci sequence using recursion."""
+def count_down_recursive(n):
+    """This function counts down from n to 0 using recursion."""
     if n == 0:
-        return 0
-    elif n == 1:
-        return 1
+        print("Blastoff!")
     else:
-        return fibonacci_recursive(n-1) + fibonacci_recursive(n-2)
+        print(n)
+        count_down_recursive(n-1)
 
-# Generate the first 10 terms of the Fibonacci sequence
-for i in range(10):
-    print(fibonacci_recursive(i))
+# Call the count_down_recursive function with an argument of 5
+count_down_recursive(5)
